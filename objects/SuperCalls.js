@@ -6,6 +6,7 @@ let person = {
 };
 
 let friend = {
+    // "Concise method"
     getGreeting() {
         // The HomeObject is "friend"
         return super.getGreeting() + ", hi";
@@ -19,6 +20,7 @@ console.log(friend.getGreeting());
 
 
 let friend2 = {
+    // NOT a "Concise method"
     getGreeting: function() {
         // NO HomeObject
         // Therefore the all to super.xx makes the whole script fails and does not execute even without calling the function
